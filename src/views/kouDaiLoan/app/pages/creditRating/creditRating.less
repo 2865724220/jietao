@@ -1,0 +1,128 @@
+.clearfix{
+  display: block;
+  &:before{
+    display: block;
+    clear: both;
+    content: '';
+  }
+  &:after{
+    display: block;
+    clear: both;
+    content: '';
+  }
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.redBg{
+  background:#FF6565;
+  color:#fff;
+  font-size:32px;
+  text-align: center;
+  padding:32px 0 42px;
+  .big{
+    font-size:64px;
+    text-align: center;
+    padding:22px 0 28px;
+  }
+  .report-a{
+    display: inline-block;
+    font-size:28px;
+    color:#fff;
+    padding:10px 14px;
+    border:1PX solid #fff;
+    border-radius: 8px;
+    margin:0 auto;
+    background:rgba(229,90,90,1);
+    box-sizing: border-box;
+    }
+    .disabled{
+      background:#BFBEBE;
+    } 
+}
+.greybg{
+  background:#EDEFF4;
+  font-size:28px;
+  color:#999;
+  padding:22px 32px;
+  .fl{
+    color:#333;
+  }
+}
+.platformList{
+  margin:0 0 20px;
+  a{
+    display: block;
+    color:#333;
+    font-size: 32px;
+    padding:32px 52px 32px 32px;
+    background:#fff;
+    border-bottom:1PX solid #ccc;
+    box-sizing: border-box;
+    line-height: 60px;
+    position:relative;
+    .fr{
+      color:#999;
+    }
+    .red{
+      color: #FF6565;
+    }
+  }
+  .platformLogo{
+    display: inline-block;
+    width:60px;
+    height:60px;
+    vertical-align: middle;
+    margin-right:20px;
+  }
+  .next-arrow{
+    display: block;
+    width:30px;
+    height: 30px;
+    position: absolute;
+    top:48px;
+    right:24px;
+  }
+  li{
+    &:last-child{
+      a{
+        border-bottom:1PX solid transparent;
+      }
+    }
+  }
+}
+.searchCredit{
+  display: block;
+  background: #fff;
+  padding:24px 32px;
+  position: relative;
+  .search-icon{
+    display: inline-block;
+    width:60px;
+    height: 60px;
+    vertical-align: middle;
+  }
+  .searchText{
+    display: inline-block;
+    font-size: 28px;
+    color: #999;
+    vertical-align: middle;
+    padding:0 20px;
+    p{
+      display: block;
+      color: #333;
+      font-size: 32px;
+    }
+  }
+  .search-arrow{
+    display: block;
+    width:30px;
+    height: 30px;
+    position: absolute;
+    right:24px;
+    top:50px;
+  }
+}

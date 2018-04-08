@@ -1,0 +1,93 @@
+*{
+  box-sizing: border-box;
+}
+@red-color:#f03232;
+#con{
+  height:auto;
+  width:100%;
+  overflow:hidden;
+}
+.list{
+  width:100%;
+  height:auto;
+  margin:auto;
+  background:#fff;
+  .list-detail{
+    height:auto;
+    padding:20px;
+    width:100%;
+    overflow: hidden;
+    border-bottom:1PX solid #ccc;
+  }
+  .top{
+    height:auto;
+    overflow: hidden;
+  }
+  .top-l{
+    float: left;
+    i{
+      float: left;
+      width:70px;
+      height:70px;
+      img{
+        width:100%;
+      }
+    }
+    p{
+      float:left;
+      margin-left:30px;
+      .l-name,.l-desp{
+        display: block;
+        text-align: left;
+      }
+      .l-name{
+        font-size:42px;
+      }
+      .l-desp{
+        font-size:22px;
+        color:#999;
+      }
+    }
+  }
+  .top-r{
+    float:right;
+    margin-right:10px;
+
+  }
+  .bottom{
+    width:100%;
+    margin-top:20px;
+    .hui{
+      color:#999;
+    }
+    .bt-l,.bt-c{
+      width:33%;
+      float:left;
+      span{
+        display: block;
+        font-size:30px;
+        text-align: left;
+      }
+    }
+    .bt-c{
+      span{
+        text-align: center;
+        font-size: 30px;
+      }
+    }
+    .bt-r{
+      width:30%;
+      float:right;
+      margin-right:10px;
+      span{
+        text-align: right;
+        display: block;
+        font-size:26px;
+      }
+      .rota{
+        font-size:34px;
+        color:@red-color;
+      }
+    }
+  }
+}

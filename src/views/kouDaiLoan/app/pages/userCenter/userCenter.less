@@ -1,0 +1,232 @@
+.user-center{
+  width:100%;
+  height:auto;
+  .top{
+    height:150px;
+    background:#f03232;
+    padding:15px 30px;
+    box-sizing: border-box;
+    .imgs{
+      margin-top:3px;
+      float:left;
+      height:120px;
+      width:120px;
+      border-radius: 60px;
+    }
+
+    .txt{
+      float:left;
+      margin-left:30px;
+      font-size: 32px;
+      color:#fff;
+      line-height: 60px;
+      img{
+        height:30px;
+        width:30px;
+        margin-left:25px;
+      }
+    }
+  }
+}
+.con{
+  background:#fff;
+  width:100%;
+  margin-top:25px;
+  li{
+    height:90px;
+    padding:0 20px;
+    border-bottom: 1PX solid #f2f2f2;
+    font-size: 30px;
+    .nameBg{
+      float:left;
+      line-height: 90px;
+      background:url("../../images/bankicon.png") left center no-repeat;
+      background-size:50px;
+      padding-left:90px;
+    }
+    .telImg{
+      background:url("../../images/tel.png") left center no-repeat;
+      background-size:50px;
+    }
+    .imgPsw{
+      background:url("../../images/changePsw.png") left center no-repeat;
+      background-size:50px;
+    }
+    .banben{
+      line-height: 90px;
+      background:url("../../images/arrowRight.png") right center no-repeat;
+      background-size:40px;
+      padding-right:50px;
+    }
+    .imgMe{
+      background:url("../../images/me.png") left center no-repeat;
+      background-size:50px;
+    }
+    .eSign{
+      background:url("../../images/eSign.png") left center no-repeat;
+      background-size:44px;
+    }
+    .conImg{
+      float:right;
+      height:40px;
+      margin-top:28px;
+    }
+  }
+}
+.clearfix{
+  display: block;
+  &:before{
+    display: block;
+    clear: both;
+    content: '';
+  }
+  &:after{
+    display: block;
+    clear: both;
+    content: '';
+  }
+}
+.history-tab{
+  background:#fff;
+  box-sizing: border-box;
+  width:100%;
+  padding:22px 0;
+  margin-top:25px;
+  li{
+    display:block;
+    width:50%;
+    float: left;
+    box-sizing: border-box;
+    &:first-child{
+      border-right:1PX solid #ccc;
+    }
+    span{
+      display: block;
+      text-align:center;
+      font-size: 32px;
+      color:#666;
+      padding:10px 0;
+    }
+  }
+  .hisTabImg{
+    display: block;
+    width:60px;
+    height:60px;
+    margin:0 auto;
+  }
+}
+
+.signImg{
+  display: inline-block;
+  vertical-align: middle;
+  float: right;
+  width:130px;
+  height:60px;
+  margin-top: 14px;
+  background: #d8d8d8;
+}
+.signImg img{
+  display: block;
+  width:100%;
+  height:100%;
+}
+.signCon{
+  background: #fff;
+  border-radius: 8px;
+  width:96%;
+  margin:0 auto;
+}
+.signCanvas {
+    position: fixed;
+    left: 0%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 500;
+    padding-top: 30%;
+}
+.headCanvas {
+  height:120px;
+  line-height: 120px;
+  font-size:36px;
+  color:#333;
+  padding:0 32px;
+}
+.headCanvas .closed{
+  width:40px;
+  height:40px;
+  background: url('../../images/closed.png') no-repeat center center;
+  background-size:cover;
+  margin:40px 0 0;
+}
+
+.saveCanvas{
+  font-size:36px;
+  color:#F03232;
+  text-align:center;
+  padding:30px 0;
+  width:50%;
+  display: block;
+  float: left;
+  margin:0 auto;
+  background: transparent;
+}
+.clearCanvas{
+  color:#999;
+  font-size:36px;
+  text-align:center;
+  padding:30px 0;
+  width:50%;
+  display: block;
+  float: left;
+  border-right:1PX solid #d8d8d8;
+  background: transparent;
+}
+.resetCanvas{
+  font-size:36px;
+  color:#F03232;
+  text-align:center;
+  padding:30px 0;
+  width:200px;
+  display: inline-block;
+  margin:0 auto;
+  background: transparent;
+}
+.footSign{
+  text-align: center;
+}
+.imgSinCon{
+  width:100%;
+  height:35%;
+  background: #f1f1f1;
+}
+.imgSinCon img{
+  display: block;
+  width:100%;
+  height:400px;
+}
+.redSign{
+  font-size: 32px;
+  color: #F03232;
+  height:90px;
+  line-height: 100px;
+  box-sizing: border-box;
+}
+.canvasArea{
+  cursor: crosshair;
+  overflow: hidden;
+  background: #f1f1f1;
+}
+.pTis{
+  font-size: 24px;
+  color: #999;
+  padding:20px 24px;
+  margin:0 16px;
+  border-bottom: 1PX solid #d8d8d8;
+}
+@media (min-width:500px) and (min-height: 600px){
+    .signCanvas{
+        padding-top: 3%;
+    }
+}

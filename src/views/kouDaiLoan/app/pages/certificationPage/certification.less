@@ -1,0 +1,99 @@
+*{
+  box-sizing: border-box;
+}
+.certif{
+  width:100%;
+  height:auto;
+  background:#fff;
+  .tips{
+    height:90px;
+    line-height: 90px;
+    background:#f2f2f2;
+    padding:0 30px;
+    font-size: 32px;
+  }
+  .forms{
+    width:100%;
+    padding:0 30px;
+    height:auto;
+    padding-top:20px;
+    .valid{
+      width:100%;
+      margin:auto;
+      font-size:30px;
+      height:80px;
+      line-height: 80px;
+      text-align: left;
+      color:#f03232;
+    }
+    li{
+      height:100px;
+      line-height: 100px;
+      font-size:32px;
+	  border-bottom:1PX solid #ccc;
+      position: relative;
+      .delinput{
+          position: absolute;
+          right:20px;
+          top:40px;
+          width:40px;
+          height:40px;
+          display:inline-block;
+      }
+      label{
+        float:left;
+        width:35%;
+      }
+      input{
+        line-height: 60px;
+        float:left;
+        margin-top:20px;
+        width:60%;
+      background:transparent;
+      }
+      .bankSelect{
+        float:right;
+        background:url("../../images/arrowRight.png")right center no-repeat;
+        background-size:40px;
+        padding-right:40px;
+      }
+    }
+    .unicode{
+      label{
+        width:35%;
+      }
+      button{
+        float:right;
+		margin-top:17px;
+        width:200px;
+        line-height: 72px;
+      };
+      input{
+        width:35%;
+      }
+    }
+  }
+  .btnOut{
+    width:100%;
+    height:auto;
+    background:#f2f2f2;
+    padding-top:250px;
+    .btn{
+      height:90px;
+      font-size:36px;
+      width: 90%;
+      margin-top:70px;
+      margin-left:5%;
+    }
+  }
+   input::-webkit-outer-spin-button,
+   input::-webkit-inner-spin-button {
+        -webkit-appearance: none !important;
+        margin: 0;
+   }  
+   input[type="number"]{
+      -moz-appearance: textfield;
+      appearance: none !important;
+      -webkit-appearance: none !important;
+    }
+}

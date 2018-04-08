@@ -1,0 +1,139 @@
+.clearfix{
+  display: block;
+  &:before{
+    display: block;
+    clear: both;
+    content: '';
+  }
+  &:after{
+    display: block;
+    clear: both;
+    content: '';
+  }
+}
+.history-list{
+  text-align:center;
+  color:#666;
+  font-size:28px;
+  box-sizing: border-box;
+}
+.bgfff{
+  background:#fff;
+  padding: 40px 0;
+  box-sizing: border-box;
+}
+.first-title{
+  /* font-size:28px; */
+}
+.num{
+  font-size:60px;
+  color:#333;
+  line-height: 72px;
+}
+.list-con-wrap{
+  background:#fff;
+  // padding:40px 0;
+  margin:20px 0;
+  box-sizing: border-box;
+}
+.list-head {
+  padding:20px 0;
+  li{
+    display: block;
+    width:33.33%;
+    float: left;
+    border-right:1PX solid #ccc;
+    box-sizing: border-box;
+    .red{
+      color: #F03232;
+    }
+    float: left;
+    &:last-child{
+      border-right:1PX solid transparent;
+    }
+  }
+}
+.list-con{
+  li{
+    display: table;
+    width:100%;
+    border-top:1PX solid #ccc;
+    padding:20px 0;
+    box-sizing: border-box;
+    position: relative;
+    .tabCell{
+      display: table-cell;
+      width:33%;
+      text-align: center;
+      vertical-align: middle;
+      img{
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 56px;
+          height: 60px;
+      }
+    }
+  }
+}
+.tabCell{
+  span{
+    color:#999;
+    display: block;
+  }
+  .bold{
+    font-size: 36px;
+    color: #333;
+    padding-bottom: 10px;
+  }
+  .red{
+    color:#F03232;
+  }
+}
+
+.ser{
+      width:100%;
+      margin:auto;
+      margin-top:30px;
+      overflow: hidden;
+      position: relative;
+      /* padding-bottom: 20px; */
+      .ser-img{
+          position: absolute;
+          width:40px;
+          height:40px;
+          left:50px;
+          top:20px;
+      }
+      .ser-icon{
+          position: absolute;
+          width:40px;
+          height:40px;
+          right:50px;
+          top:20px;
+      }
+  }
+    .ser-in{
+        box-sizing: border-box;
+        height:75px;
+        width:90%;
+        background:#f1f1f1;
+        padding-left:80px;
+        font-size:30px;
+        float: left;
+        margin-left:5%;
+        border-radius:8px;
+        text-align:center;
+}
+.more{
+  display: block;
+  padding:20px 32px;
+  text-align: center;
+  font-size: 32px;
+}
+.nodata{
+  display: none;
+  font-size:36px;
+  text-align: center;
+  padding:240px 0;
+}

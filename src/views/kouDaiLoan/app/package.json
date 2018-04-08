@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "dev": "node ../../../../build/dev-server.js -e views/kouDaiLoan/app/main.js --outpath kouDaiLoan/app -h views/kouDaiLoan/app/index.html",
+    "start": "npm run dev",
+    "build": "node ../../../../build/build.js -e views/kouDaiLoan/app/main.js --outpath kouDaiLoan/app -h views/kouDaiLoan/app/index.html"
+  },
+  "dependencies": {
+    "vue-echarts-v3": "^1.0.18"
+  }
+}

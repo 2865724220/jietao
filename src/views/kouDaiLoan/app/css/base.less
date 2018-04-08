@@ -1,0 +1,402 @@
+html {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height:100%;
+  overflow: auto;
+  background:#fff;
+  font-size:100%;
+}
+
+*{
+  padding:0;
+  margin: 0;
+  border: 0 none;
+  text-decoration: none;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+}
+html, img , body, div, span, h1, h2, h3, p, em, img, dl, dt, dd, ol, ul, li, table, tr,th,td, form,input,select{
+  margin:0;
+  padding:0;
+}
+* html iframe, * html frame{
+  overflow:auto;
+}
+* html frameset,.o_hidden{
+  /*IE7--下兼容overflow:hidden加position*/
+  position: relative;
+  overflow: hidden;
+}
+/*解决由-webkit-overflow-scrolling: touch 引起的滚动条*/
+::-webkit-scrollbar {
+  display: none;
+}
+body{
+  /*去除微信游览器a标签元素点击的时候出现蓝色的边框*/
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background:#f2f2f2;
+  font-family: "helvetica neue", helvetica, stheiti, sans-serif;
+  line-height: 1.5;
+  margin: 0 auto;
+  color: #000;
+  -webkit-user-select: none;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  outline: 0;
+  z-index: 1;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: auto;
+}
+/* 去掉链接的虚线框 */
+a,input,textarea{
+  outline:none;
+}
+/* 使盒子计算宽高不包含padding */
+._box_sizing, ._box_sizing:before, ._box_sizing:after {
+  box-sizing:border-box;
+  -moz-box-sizing:border-box; /* Firefox */
+  -webkit-box-sizing:border-box; /* Safari */
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+  color:    #999;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color:    #999;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color:    #999;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color:    #999;
+}
+.fl{
+  float:left;
+}
+.fr{
+  float:right;
+}
+#app{
+  height:100%;
+}
+
+//公共颜色
+@orange-color:#ff9f2d;
+@orange-bg:#fffaea;
+@red-color:#f03232;
+@red-bg:#ffeaea;
+@gray-bottom:#ccc;
+@gray-color:#b2b2b2;
+@green-color:#76da74;
+@blue-a:#387bee;
+.gray{
+  color:#b2b2b2;
+}
+.orange{
+  color:#ff9f2d;
+}
+.green{
+  color:#76da74;
+}
+.graydeep{
+  color:#666;
+}
+.red{
+  color:#f03232;
+}
+.blue{
+  color:#387bee;
+}
+//修改tabs样式
+.custom-tabwrap {
+
+  .van-tabs-nav-bar{
+    background: @red-color;
+  }
+  .van-tabs__nav--line{
+    height:80px;
+  }
+  .van-tab{
+    line-height: 80px;
+    font-size:30px;
+    width:30%;
+    background:#fff;
+    border-right:1PX solid #ccc;
+  }
+  .van-tab:nth-last-of-type(1){
+    border:0;
+  }
+
+}
+#app {
+  .custom-tabwrap{
+    .van-tab--active{
+      color: @red-color;
+      background:#fff;
+    }
+  }
+
+}
+.custom-pane {
+  text-align: center;
+  height: auto;
+  line-height: 50px;
+}
+//end
+.redBtn{
+  border:2px solid @red-color;
+  background:@red-bg;
+  color:@red-color;
+  display: block;
+  width:130px;
+  line-height: 50px;
+  height:50px;
+  border-radius:25px;
+}
+.orangeBtn{
+  border:2px solid @orange-color;
+  background:@orange-bg;
+  color:@orange-color;
+  display: block;
+  width:130px;
+  line-height: 50px;
+  height:50px;
+  border-radius:25px;
+}
+.uncheckedBtn{
+  border:2px solid @red-color;
+  background:#fff;
+  display: block;
+  /* width:140px; */
+  padding:0 10px;
+  height:70px;
+  border-radius:10px;
+  font-size:28px;
+  color:@red-color;
+}
+.checkedBtn{
+  border:2px solid #585c64;
+  background:#fff;
+  display: block;
+  width:140px;
+  height:70px;
+  border-radius:10px;
+  font-size:28px;
+  color:#585c64;
+}
+//修改时间选择的样式 和利率选择
+#app {
+  .van-picker__cancel,.van-picker__confirm {
+    color:@red-color;
+    font-size:32px;
+  }
+  .van-picker__title{
+    font-size:32px;
+  }
+  .van-picker__title,.van-picker__toolbar{
+    height:70px;
+    line-height:70px;
+  }
+}
+.van-picker-column__item{
+  font-size:30px;
+}
+.datePicker{
+  width:100%;
+  height:100%;
+  position: absolute;
+  left:0;
+  bottom:0;
+  background:rgba(0,0,0,0.6);
+  .van-picker{
+    position:fixed;
+    left:0;
+    bottom:0;
+    width:100%;
+  }
+}
+.pickerP{
+  width:100%;
+  height:100%;
+  position: absolute;
+  left:0;
+  bottom:0;
+  background:rgba(0,0,0,0.6);
+  .van-picker{
+    position:fixed;
+    left:0;
+    bottom:0;
+    width:100%;
+  }
+}
+//toast提示信息
+body .van-toast--text{
+  padding:20px 30px;
+  font-size:30px !important;
+}
+.van-toast--text .van-toast__text{
+  line-height: 60px !important;
+  font-size:30px !important;
+}
+//action
+.van-actionsheet{
+  height:auto;
+  background: #fff;
+  .van-actionsheet__cancel{
+    height:60px;
+    line-height: 60px;
+    font-size:30px;
+    margin-top:0;
+  }
+  .van-actionsheet__list{
+    .liS{
+      color:@red-color;
+    }
+    .van-actionsheet__item{
+    }
+    .van-hairline--top{
+      height:120px;
+      line-height: 120px;
+      font-size:30px;
+      border-bottom:1PX solid #ccc;
+    }
+  }
+}
+//搜索框
+.ser{
+  width:95%;
+  margin:auto;
+  margin-top:20px;
+  .van-search{
+    height:80px;
+    background:#fff !important;
+    .van-icon-search,.van-icon-clear{
+      font-size:28px;
+    }
+  }
+  .van-search__input-wrap{
+    height:50px;
+  }
+  .van-search__input{
+    line-height: 50px;
+    height:100%;
+    background:#f2f2f2;
+    margin-left:10px;
+    padding-left:10px;
+    border-radius: 8px;
+    font-size:28px;
+  }
+}
+//输入密码
+.pswInput{
+  .van-password-input__security{
+    height:100px;
+    border:0px solid #ccc;
+  }
+  .van-number-keyboard__delete{
+    background-size:28%;
+  }
+  .van-number-keyboard i{
+    height:100px;
+    font-size:40px;
+    line-height: 100px;
+
+  }
+  .van-password-input__error-info, .van-password-input__info {
+    font-size: 32px;
+  }
+  .van-password-input__security i {
+    width: 30px;
+    height: 30px;
+    top:40%;
+    left:40%;
+  }
+  .van-number-keyboard i:nth-of-type(10), .van-number-keyboard i:nth-of-type(12) {
+    background-color: #d1d5db;
+  }
+}
+//设置密码
+.setPsw{
+  background:#fff;
+  .van-password-input{
+    height:800px;
+    margin-top:200px;
+  }
+  .van-password-input__security{
+    border:1PX solid #ccc;
+  }
+  .van-number-keyboard i{
+    height:120px;
+    font-size:40px;
+    line-height: 120px;
+
+  }
+}
+#app{
+  .van-picker .van-picker-center-highlight:after,
+  .van-picker .van-picker-center-highlight:before{
+    height:2px;
+  }
+}
+
+.van-hairline--bottom:after, .van-hairline--left:after, .van-hairline--right:after, .van-hairline--surround:after, .van-hairline--top-bottom:after, .van-hairline--top:after, .van-hairline:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  -webkit-transform: scale(.5);
+  transform: scale(.5);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  pointer-events: none;
+  box-sizing: border-box;
+  border: 0 solid #999;
+}
+.van-dialog{
+    width:65% !important;
+    .van-dialog__content {
+        padding:50px 30px;
+    }
+}
+
+.van-dialog__footer.is-twobtn {
+    height:80px;
+    line-height: 80px;
+    .van-dialog__cancel{
+        border-right:2px solid #ccc;
+    }
+    button{
+        height:80px;
+        line-height: 80px;
+    }
+
+}
+
+
+.singleBtn .foot-btn .green {
+    width: 100%;
+  }
+
+/* 键盘样式 */
+.pswInput .van-number-keyboard i::after {
+    border-top-width: 1PX;
+}
+.pswInput .van-number-keyboard i:not(:nth-of-type(3n))::after{
+    border-right-width: 1PX;
+}
+.pswInput .van-password-input__security li:not(:first-of-type)::after {
+    border-left-width: 1PX;
+}
+
+
+body.formSearch .van-toast--text{
+  text-align: center;
+}
